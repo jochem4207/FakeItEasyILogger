@@ -47,16 +47,16 @@ public IEnumerable<WeatherForecast> Get()
 
 Test file
 ```
-   [Fact]
-        public void WeatherForecast_Get_Should_Log()
-        {
-            // Arrange
-            var weatherController = new WeatherForecastController(_logger);
+[Fact]
+public void WeatherForecast_Get_Should_Log()
+{
+    // Arrange
+    var weatherController = new WeatherForecastController(_logger);
 
-            // Act
-            weatherController.Get();
+    // Act
+    weatherController.Get();
 
-            // Assert
-            _logger.VerifyLog(LogLevel.Information, "Get Weather Called").MustHaveHappenedOnceExactly();
-        }
+    // Assert
+    _logger.VerifyLog(LogLevel.Information, "Get Weather Called").MustHaveHappenedOnceExactly();
+}
 ```
