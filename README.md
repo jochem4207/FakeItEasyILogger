@@ -22,8 +22,11 @@ Pass your fake logger into the class that uses the logger
 After performing the actions of your tests simply call the appropriate methods on the fake logger to assert logs happened, or didn't happen based on a few criteria
 
 
-`_fakeLogger.VerifyLogMustHaveHappened(LogLevel.Error, "Failed");
-_fakeLogger.VerifyLogMustNotHaveHappened(LogLevel.Error, "Failed");`
+`
+_fakeLogger.VerifyLogMustHaveHappened(LogLevel.Error, "Failed");
+
+_fakeLogger.VerifyLogMustNotHaveHappened(LogLevel.Error, "Failed");
+`
 
 If you want to use more of the built in FakeItEasy argument validations call the VerifyLog method
 
