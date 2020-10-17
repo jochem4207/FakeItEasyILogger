@@ -7,6 +7,8 @@ Based on : https://dev.azure.com/BrideButler/Bride%20Butler%20Open%20Source (sad
 
 See also : https://stackoverflow.com/a/64406264/1112413 (for the history and explanation)
 
+Feel free to do anything with this code! 
+
 # Usage (copied from Bride butler)
 
 Use
