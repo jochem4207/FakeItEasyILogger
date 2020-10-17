@@ -33,4 +33,30 @@ If you want to use more of the built in FakeItEasy argument validations call the
 
 `_fakeLogger.VerifyLog(LogLevel.Error, "Failed").MustHaveHappenedTwiceOrMore();`
 
+# Usage example of my own
 
+Controller
+```
+[HttpGet]
+public IEnumerable<WeatherForecast> Get()
+{
+    _logger.Log(LogLevel.Information, "Get Weather Called");
+}
+```
+
+
+Test file
+```
+   [Fact]
+        public void WeatherForecast_Get_Should_Log()
+        {
+            // Arrange
+            var weatherController = new WeatherForecastController(_logger);
+
+            // Act
+            weatherController.Get();
+
+            // Assert
+            _logger.VerifyLog(LogLevel.Information, "Get Weather Called").MustHaveHappenedOnceExactly();
+        }
+```
