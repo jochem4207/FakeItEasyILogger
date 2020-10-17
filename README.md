@@ -4,6 +4,7 @@ Fake it easy Ilogger verify extension
 .NET 5 compatible (tested with Microsoft.Extensions.Logging Version="5.0.0-rc.2.20475.5")
 
 Based on : https://dev.azure.com/BrideButler/Bride%20Butler%20Open%20Source (sadly cannot create a PR there)
+
 See also : https://stackoverflow.com/a/64406264/1112413 (for the history and explanation)
 
 # Usage (copied from Bride butler)
